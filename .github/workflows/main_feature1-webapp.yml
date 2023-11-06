@@ -19,7 +19,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 'v7.0'
+          dotnet-version: '7.x'
           include-prerelease: true
 
       - name: Build with dotnet
@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'Feature1-WebApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_07A6A17854C94495906DE0D00A91467A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CBD35788D8A742618E2D6CA940C74928 }}
           package: .
