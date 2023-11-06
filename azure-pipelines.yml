@@ -6,7 +6,7 @@
 trigger:
 - main
 variables:
-  uiSource: '/'
+  uiSource: 'package.json'
   uiBuild: '$(uiSource)/build'
 
 pool:
